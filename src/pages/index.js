@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Hero from "../components/hero"
@@ -10,7 +11,7 @@ import Sponsors from "../components/sponsors"
 const speakers = [
 ]
 
-export default () => (
+export default ({ data }) => (
     <Layout>
         <Section>
             <Hero />
@@ -38,3 +39,13 @@ export default () => (
         </Section>
     </Layout>
 )
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

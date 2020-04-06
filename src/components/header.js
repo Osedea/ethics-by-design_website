@@ -7,7 +7,7 @@ export default function Header(props) {
         <header>
             <Logo />
             <ul>
-                {props.pages.map((item) => <li><Link to={item.link}>{item.text}</Link></li>)}
+                {props.pages.map((item) => <li><Link to={item.url}>{item.label}</Link></li>)}
             </ul>
         </header>
     )

@@ -10,26 +10,13 @@ export default function Footer(props) {
             </div>
             <div className="footer-social">
                 <ul>
-                    <li>
-                        <Link to={props.slack}>
-                            <img src="/assets/slack.svg" />
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={props.linkedin}>
-                            <img src="/assets/linkedin.svg" />
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={props.twitter}>
-                            <img src="/assets/twitter.svg" />
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={props.mastondon}>
-                            <img src="/assets/mastondon.svg" />
-                        </Link>
-                    </li>
+                    {props.networks.map(({ url, icon }) => (
+                        <li key={icon}>
+                            <Link to={url}>
+                                <img src={icon} />
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
                 <p><Link to="/mentions-legales">Mentions légales</Link></p>
             </div>
