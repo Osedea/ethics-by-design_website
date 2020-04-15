@@ -1,0 +1,10 @@
+.articlesList {}
+
+.articlesList ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.articlesList li {
+    display: flex;
+}

@@ -1,18 +1,18 @@
 :root {
-    --main-bg-color: #ceffaf;
+  --main-bg-color: #ceffaf;
 }
 
-
 body {
-    margin: 0;
-    background-color: var(--main-bg-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Helvetica;
+  margin: 0;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Helvetica;
 }
 
 .layout {
-    width: 1080px;
-    margin: 0 auto;
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 100px;
 }

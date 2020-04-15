@@ -28,7 +28,6 @@ export default function Layout(props) {
     `
   )
 
-  console.log(data.site.siteMetadata.tabs)
   return (
     <div className={layoutStyle.layout}>
       <Header pages={data.site.siteMetadata.tabs} />
