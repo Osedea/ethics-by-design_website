@@ -1,0 +1,30 @@
+.logo {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 90%;
+    /* or 27px */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -moz-min-content;
+    width: min-content;
+    letter-spacing: -0.03em;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-stroke-color: black;
+    -webkit-text-stroke-color: black;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+}
+
+.logo span {
+    display: block;
+}
+
+
+.logo span:last-of-type {
+    -moz-text-fill-color: black;
+    -webkit-text-fill-color: black;
+}
