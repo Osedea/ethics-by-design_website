@@ -15,7 +15,7 @@ ul {
   display: flex;
 }
 
-ul li > a {
+.header ul li > a {
   padding: 6px 20px;
   text-transform: uppercase;
   font-family: Helvetica;
@@ -29,11 +29,11 @@ ul li > a {
   align-items: center;
   text-align: center;
   letter-spacing: -0.02em;
-  color: black;
   text-decoration: none;
 }
 
 .link {
+  color: black;
   margin: 0 5px;
 }
 

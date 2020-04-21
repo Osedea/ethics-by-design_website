@@ -1,0 +1,13 @@
+.sponsor {
+}
+
+.sponsor ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.sponsor li a {
+  color: var(--main-bg-color);
+  text-decoration: none;
+}

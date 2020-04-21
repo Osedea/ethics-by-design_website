@@ -65,6 +65,15 @@ module.exports = {
         path: `${__dirname}/data/posts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+        ignore: `**/*`,
+      },
+    },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
   ],
 }
