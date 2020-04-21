@@ -1,0 +1,19 @@
+.section {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.black {
+  background-color: black;
+}
+
+.container {
+  width: 1080px;
+  display: flex;
+}

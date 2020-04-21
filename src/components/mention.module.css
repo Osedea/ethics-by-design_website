@@ -1,0 +1,13 @@
+.mention {
+  display: flex;
+  justify-content: center;
+}
+
+.mention p {
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+  font-size: 14px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--main-bg-color);
+  display: inline-block;
+}

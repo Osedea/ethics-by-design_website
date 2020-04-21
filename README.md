@@ -30,6 +30,17 @@ Your site is now running at `http://localhost:8000`!
 
 _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
+## 💾 How is data managed ?
+
+The data is located in `/data` :
+- `/<year>.md` will contain all the data for the current year's event
+- `/posts` folder will contain all the blog posts
+
+You can have a look at `index.js` to see how to retrieve data from markdown files with graphql using markdown-remark plugin.
+
+Feel free to add more folders or rearrange data structure if needed
+
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
