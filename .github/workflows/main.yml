@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.16.X'
+
+    - name: Install node modules
+      run: yarn
+
+    - name: Build
+      run: yarn build
+
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git branch -d published
+        git checkout -b published
+        rm -rf data node_modules src static
+        git add .
+        git commit -m "Published new version"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: published
+        force: true
