@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Hero from "../components/hero"
@@ -35,7 +36,7 @@ export const query = graphql`
   }
 `
 
-export default ({ location, data }) => {
+const Programme = ({ location, data }) => {
     const programmeData = data.allMarkdownRemark.edges[0].node.frontmatter;
     console.log(programmeData);
 
@@ -62,3 +63,5 @@ export default ({ location, data }) => {
         </Layout>
     );
 }
+
+export default Programme;

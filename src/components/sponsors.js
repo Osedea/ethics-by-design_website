@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Card from './Card';
+import Card from './card';
 import style from "./sponsors.module.css"
 
 export default function Sponsors(props) {

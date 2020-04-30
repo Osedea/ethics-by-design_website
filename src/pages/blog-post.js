@@ -8,14 +8,16 @@ import ArticlesList from "../components/articles-list"
 const content = null
 const toReadAlso = []
 
-export default ({ location }) => (
+const BlogPost = ({ location }) => (
     <Layout location={location}>
         <Section>
             {content}
         </Section>
         <Section>
             <Title />
-            <ArticlesList articles={toReadAlso} />
+            <ArticlesList items={toReadAlso} />
         </Section>
     </Layout>
 )
+
+export default BlogPost;

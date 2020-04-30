@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Section from "../components/section"
@@ -25,7 +26,7 @@ export const query = graphql`
   }
 `
 
-export default ({ location, data }) => {
+const APropos = ({ location, data }) => {
     console.log('a propos', data);
     const aPropos = data.allMarkdownRemark.edges[0].node.frontmatter.title
 
@@ -41,3 +42,5 @@ export default ({ location, data }) => {
         </Layout>
     );
 }
+
+export default APropos;

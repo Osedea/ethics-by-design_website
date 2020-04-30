@@ -4,8 +4,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
+import "../styles/global.css"
 import layoutStyle from "./layout.module.css"
-import globalStyle from "../styles/global.css"
 
 export default function Layout(props) {
   const data = useStaticQuery(

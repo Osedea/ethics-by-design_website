@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Section from "../components/section"
@@ -41,7 +42,7 @@ export const query = graphql`
   }
 `
 
-export default ({ data, location }) => {
+const Organisateurs = ({ data, location }) => {
     const orgData = data.allMarkdownRemark.edges[0].node.frontmatter;
 
     return (
@@ -87,3 +88,5 @@ export default ({ data, location }) => {
         </Layout>
     );
 }
+
+export default Organisateurs;

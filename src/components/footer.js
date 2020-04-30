@@ -1,6 +1,6 @@
 import React from "react"
-import LogoDesignersEthiques from "./logo-designers-ethiques"
 import { Link } from "gatsby"
+import LogoDesignersEthiques from "./logo-designers-ethiques"
 
 import style from "./footer.module.css"
 

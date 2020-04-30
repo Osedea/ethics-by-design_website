@@ -1,6 +1,6 @@
 import React from "react"
 
-import Tag from "../components/tag"
+import Tag from "./tag"
 
 import style from "./speaker.module.css"
 

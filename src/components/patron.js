@@ -1,6 +1,6 @@
 import React from "react"
 
-import Tag from "../components/tag"
+import Tag from "./tag"
 
 export default function Patron(props) {
     return (

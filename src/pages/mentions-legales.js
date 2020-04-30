@@ -28,7 +28,7 @@ export const query = graphql`
   }
 `
 
-export default ({ data, location }) => {
+const MentionsLegales = ({ data, location }) => {
     const metadata = data.allMarkdownRemark.edges[0].node.frontmatter;
     const content = data.allMarkdownRemark.edges[0].node.html
 
@@ -36,9 +36,10 @@ export default ({ data, location }) => {
         <Layout location={location}>
             <Section>
                 <Title>{metadata.title}</Title>
-                <div dangerouslySetInnerHTML={{ __html: content }}>
-                </div>
+                <div dangerouslySetInnerHTML={{ __html: content }} />
             </Section>
         </Layout>
     );
 }
+
+export default MentionsLegales;

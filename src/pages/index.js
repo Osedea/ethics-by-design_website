@@ -41,7 +41,7 @@ export const query = graphql`
   }
 `
 
-export default ({ data, location}) => {
+const Index = ({ data, location}) => {
     const edition = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
@@ -53,7 +53,7 @@ export default ({ data, location}) => {
         <Card
           title={edition.title}
           content={edition.description}
-          buttonText={"Programme"}
+          buttonText="Programme"
         />
         <Grid columns="3" rows="2">
           {edition.speakers.map((speaker, index) => (
@@ -73,8 +73,10 @@ export default ({ data, location}) => {
       <Section dark vertical>
         <Hero />
         <Sponsors items={edition.sponsors} />
-        <Mention text={"Avec le soutien de la CNIL et la Fing"} />
+        <Mention text="Avec le soutien de la CNIL et la Fing" />
       </Section>
     </Layout>
   )
 }
+
+export default Index;

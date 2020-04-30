@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Section from "../components/section"
@@ -35,7 +36,7 @@ export const query = graphql`
   }
 `
 
-export default ({ location, data }) => {
+const Intervenants = ({ location, data }) => {
     console.log('intervenants', data);
     const intervenants = data.allMarkdownRemark.edges[0].node.frontmatter;
 
@@ -52,3 +53,5 @@ export default ({ location, data }) => {
         </Layout>
     );
 }
+
+export default Intervenants;

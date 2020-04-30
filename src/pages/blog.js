@@ -1,11 +1,11 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Hero from "../components/hero"
 import Section from "../components/section"
 import Title from "../components/title"
 import ArticlesList from "../components/articles-list"
-import { graphql } from "gatsby"
 
 export const query = graphql`
   query {
@@ -25,7 +25,7 @@ export const query = graphql`
   }
 `
 
-export default ({
+const Blog = ({
   data: {
     allMarkdownRemark: { edges },
   },
@@ -44,3 +44,5 @@ export default ({
     </Layout>
   )
 }
+
+export default Blog;
