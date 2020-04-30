@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         label: "Billetterie",
-        url: "/billeterie",
+        url: "/billetterie",
         highlighted: true,
       },
     ],

@@ -41,3 +41,7 @@ ul {
   background-color: black;
   color: var(--main-bg-color);
 }
+
+a.linkhighlighted, a.linkhighlighted:visited, a.linkhighlighted:active {
+    color: var(--main-bg-color);
+}

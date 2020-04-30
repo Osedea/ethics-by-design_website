@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import style from "./sponsors.module.css"
 
 export default function Sponsors(props) {
-  console.log(props)
+
   return (
     <div className={style.sponsor}>
       <div className="sponsor-main">{props.main}</div>

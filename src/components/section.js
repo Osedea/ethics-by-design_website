@@ -7,13 +7,13 @@ export default function Card(props) {
 
   return (
     <section className={[style.section, props.dark && style.black].join(" ")}>
-      <section
+      <div
         className={[style.container, props.vertical && style.vertical].join(
           " "
         )}
       >
         {props.children}
-      </section>
+      </div>
     </section>
   )
 }
