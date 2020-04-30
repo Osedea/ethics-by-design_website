@@ -17,33 +17,35 @@ export const query = graphql`
         title
       }
     }
-    allFile(filter: { sourceInstanceName: { eq: "data" } }) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-              speakers {
-                name
-                role
-              }
-              sponsors {
-                name
-                link
-              }
-              description
+    allMarkdownRemark(filter: {frontmatter: {path: {eq: "/"}}}) {
+        edges {
+            node {
+                frontmatter {
+                    path
+                    author
+                    description
+                    title
+                    speakers {
+                        name
+                        role
+                        picture_url
+                    }
+                    sponsors {
+                        link
+                        name
+                    }
+                }
             }
-          }
         }
-      }
     }
   }
 `
 
-export default ({ data }) => {
-  const edition = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+export default ({ data, location}) => {
+    const edition = data.allMarkdownRemark.edges[0].node.frontmatter
+
   return (
-    <Layout>
+    <Layout location={location}>
       <Section>
         <Hero />
       </Section>

@@ -29,10 +29,11 @@ export default ({
   data: {
     allMarkdownRemark: { edges },
   },
+  location,
 }) => {
   console.log(edges)
   return (
-    <Layout>
+    <Layout location={location}>
       <Section>
         <Hero />
       </Section>

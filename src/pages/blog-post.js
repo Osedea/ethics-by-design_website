@@ -8,8 +8,8 @@ import ArticlesList from "../components/articles-list"
 const content = null
 const toReadAlso = []
 
-export default () => (
-    <Layout>
+export default ({ location }) => (
+    <Layout location={location}>
         <Section>
             {content}
         </Section>
