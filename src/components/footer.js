@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import LogoDesignersEthiques from "./logo-designers-ethiques"
+import PrefixedImage from "./prefixed-image"
 
 import style from "./footer.module.css"
 
@@ -15,7 +16,7 @@ export default function Footer(props) {
           {props.networks.map(({ url, icon }) => (
             <li key={icon}>
               <a href={url} target="_blank" rel="noopener">
-                <img src={icon} />
+                <PrefixedImage src={icon} />
               </a>
             </li>
           ))}

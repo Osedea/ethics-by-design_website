@@ -1,4 +1,5 @@
 import React from "react"
+import PrefixedImage from "./prefixed-image"
 
 import Tag from "./tag"
 
@@ -9,7 +10,7 @@ export default function Speaker(props) {
 
   return (
     <article className={style.speaker}>
-      <img src={props.picture_url} />
+      {props.picture_url && <PrefixedImage src={props.picture_url} />}
       <div className={nameAndTitleClass}>
         <p className="speaker-name">{props.name}</p>
         <p className="speaker-title">{props.title}</p>
