@@ -1,6 +1,6 @@
 import React from "react"
-import LogoDesignersEthiques from "./logo-designers-ethiques"
 import { Link } from "gatsby"
+import LogoDesignersEthiques from "./logo-designers-ethiques"
 
 import style from "./footer.module.css"
 
@@ -14,9 +14,9 @@ export default function Footer(props) {
         <ul>
           {props.networks.map(({ url, icon }) => (
             <li key={icon}>
-              <Link to={url}>
+              <a href={url} target="_blank" rel="noopener">
                 <img src={icon} />
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

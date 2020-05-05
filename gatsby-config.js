@@ -7,52 +7,25 @@
 module.exports = {
   siteMetadata: {
     title: "Ethics by Design - 2020",
-    tabs: [
-      {
-        label: "A propos",
-        url: "/a-propos",
-      },
-      {
-        label: "Programme",
-        url: "/programme",
-      },
-      {
-        label: "Intervenants",
-        url: "/intervenants",
-      },
-      {
-        label: "Organisateurs",
-        url: "/organisateurs",
-      },
-      {
-        label: "Blog",
-        url: "/blog",
-      },
-      {
-        label: "Billetterie",
-        url: "/billeterie",
-        highlighted: true,
-      },
-    ],
     social: [
       {
         type: "slack",
-        url: "",
+        url: "https://slack.designersethiques.org",
         icon: "/assets/slack.svg",
       },
       {
         type: "linkedin",
-        url: "",
+        url: "https://www.linkedin.com/company/designers-ethiques/",
         icon: "/assets/linkedin.svg",
       },
       {
         type: "twitter",
-        url: "",
+        url: "https://twitter.com/designethique",
         icon: "/assets/twitter.svg",
       },
       {
         type: "mastondon",
-        url: "",
+        url: "https://mastodon.design/@designersethiques",
         icon: "/assets/mastondon.svg",
       },
     ],

@@ -1,0 +1,20 @@
+extends:
+  - osedea/react
+  - osedea/prettier # this always needs to be last
+
+parserOptions:
+  project: 'tsconfig.json'
+  tsconfigRootDir: './'
+
+settings:
+  react:
+    version: 'detect'
+
+
+rules:
+  import/no-extraneous-dependencies: off
+  import/no-cycle: off
+  react/jsx-no-bind: off
+  no-undefined: warn
+  react/prop-types: off
+  react/no-danger: off

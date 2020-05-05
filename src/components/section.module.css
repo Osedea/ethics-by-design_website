@@ -16,4 +16,5 @@
 .container {
   width: 1080px;
   display: flex;
+  flex-direction: column;
 }

@@ -1,6 +1,6 @@
 import React from "react"
 
-import Tag from "../components/tag"
+import Tag from "./tag"
 
 export default function Patron(props) {
     return (
@@ -9,10 +9,13 @@ export default function Patron(props) {
                 <img src={props.picture} />
             </div>
             <div className="patron-description">
-                <p className="speaker-title">{props.title}</p>
-                <div className="patron-social">
-                    {props.links.map((link) => <Tag link={link.target} value={link.text} />)}
-                </div>
+                <p className="patron-title">{props.title}</p>
+                {props.links && props.links.length > 0
+                    ? <div className="patron-social">
+                        {props.links.map((link) => <Tag link={link.target} value={link.text} />)}
+                    </div>
+                    : null
+                }
             </div>
         </article>
     )

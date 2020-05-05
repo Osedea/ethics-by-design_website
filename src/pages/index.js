@@ -17,33 +17,35 @@ export const query = graphql`
         title
       }
     }
-    allFile(filter: { sourceInstanceName: { eq: "data" } }) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-              speakers {
-                name
-                role
-              }
-              sponsors {
-                name
-                link
-              }
-              description
+    allMarkdownRemark(filter: {frontmatter: {path: {eq: "/"}}}) {
+        edges {
+            node {
+                frontmatter {
+                    path
+                    author
+                    description
+                    title
+                    speakers {
+                        name
+                        role
+                        picture_url
+                    }
+                    sponsors {
+                        link
+                        name
+                    }
+                }
             }
-          }
         }
-      }
     }
   }
 `
 
-export default ({ data }) => {
-  const edition = data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+const Index = ({ data, location}) => {
+    const edition = data.allMarkdownRemark.edges[0].node.frontmatter
+
   return (
-    <Layout>
+    <Layout location={location}>
       <Section>
         <Hero />
       </Section>
@@ -51,7 +53,7 @@ export default ({ data }) => {
         <Card
           title={edition.title}
           content={edition.description}
-          buttonText={"Programme"}
+          buttonText="Programme"
         />
         <Grid columns="3" rows="2">
           {edition.speakers.map((speaker, index) => (
@@ -71,8 +73,10 @@ export default ({ data }) => {
       <Section dark vertical>
         <Hero />
         <Sponsors items={edition.sponsors} />
-        <Mention text={"Avec le soutien de la CNIL et la Fing"} />
+        <Mention text="Avec le soutien de la CNIL et la Fing" />
       </Section>
     </Layout>
   )
 }
+
+export default Index;

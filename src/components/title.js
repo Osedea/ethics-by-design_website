@@ -2,6 +2,6 @@ import React from "react"
 
 export default function Title(props) {
     return (
-        <h2>{props.children}</h2>
+        <h1>{props.children}</h1>
     )
 };

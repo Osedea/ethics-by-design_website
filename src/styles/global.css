@@ -1,3 +1,7 @@
 :root {
     --main-bg-color: #ceffaf;
 }
+
+a:visited {
+    color: black;
+}
