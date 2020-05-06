@@ -13,12 +13,16 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: {frontmatter: {path: {eq: "/a-propos"}}}) {
+    allMarkdownRemark(
+        filter: {frontmatter: {path: {eq: "/a-propos"}}},
+        sort: {fields: frontmatter___order, order: ASC }
+    ) {
         edges {
             node {
                 frontmatter {
                     path
                     title
+                    order
                 }
                 html
             }
@@ -28,19 +32,14 @@ export const query = graphql`
 `
 
 const APropos = ({ location, data }) => {
-    console.log('a propos', data);
-    const aPropos = data.allMarkdownRemark.edges[0].node.frontmatter;
-    const aProposContent = data.allMarkdownRemark.edges[0].node.html;
-
     return (
         <Layout location={location}>
-            <Section>
-                <Title>{aPropos.title}</Title>
-                <ContentWrapper content={aProposContent} />
-            </Section>
-            <Section>
-                <Title />
-            </Section>
+            {data.allMarkdownRemark.edges.map((edge) => {
+                return <Section key={edge.node.frontmatter.title}>
+                    <Title>{edge.node.frontmatter.title}</Title>
+                    <ContentWrapper content={edge.node.html} />
+                </Section>;
+            })}
         </Layout>
     );
 }

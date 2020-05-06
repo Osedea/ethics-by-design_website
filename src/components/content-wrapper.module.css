@@ -13,3 +13,7 @@
 .contentWrapper div {
   max-width: 750px;
 }
+
+.contentWrapper h1 {
+  line-height: 30px;
+}
