@@ -1,0 +1,19 @@
+.contentWrapper {
+  font-family: Georgia, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 137.99%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentWrapper div {
+  max-width: 750px;
+}
+
+.contentWrapper h1 {
+  line-height: 30px;
+}

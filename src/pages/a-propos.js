@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../layouts/layout"
 import Section from "../components/section"
 import Title from "../components/title"
+import ContentWrapper from "../components/content-wrapper"
 
 export const query = graphql`
   query {
@@ -12,12 +13,16 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: {frontmatter: {path: {eq: "/a-propos"}}}) {
+    allMarkdownRemark(
+        filter: {frontmatter: {path: {eq: "/a-propos"}}},
+        sort: {fields: frontmatter___order, order: ASC }
+    ) {
         edges {
             node {
                 frontmatter {
                     path
                     title
+                    order
                 }
                 html
             }
@@ -27,18 +32,14 @@ export const query = graphql`
 `
 
 const APropos = ({ location, data }) => {
-    console.log('a propos', data);
-    const aPropos = data.allMarkdownRemark.edges[0].node.frontmatter.title
-
     return (
         <Layout location={location}>
-            <Title>{aPropos.title}</Title>
-            <Section>
-                <Title />
-            </Section>
-            <Section>
-                <Title />
-            </Section>
+            {data.allMarkdownRemark.edges.map((edge) => {
+                return <Section key={edge.node.frontmatter.title}>
+                    <Title>{edge.node.frontmatter.title}</Title>
+                    <ContentWrapper content={edge.node.html} />
+                </Section>;
+            })}
         </Layout>
     );
 }
