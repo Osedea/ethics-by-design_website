@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../layouts/layout"
 import Section from "../components/section"
 import Title from "../components/title"
+import ContentWrapper from "../components/content-wrapper"
 
 export const query = graphql`
   query {
@@ -28,13 +29,14 @@ export const query = graphql`
 
 const APropos = ({ location, data }) => {
     console.log('a propos', data);
-    const aPropos = data.allMarkdownRemark.edges[0].node.frontmatter.title
+    const aPropos = data.allMarkdownRemark.edges[0].node.frontmatter;
+    const aProposContent = data.allMarkdownRemark.edges[0].node.html;
 
     return (
         <Layout location={location}>
-            <Title>{aPropos.title}</Title>
             <Section>
-                <Title />
+                <Title>{aPropos.title}</Title>
+                <ContentWrapper content={aProposContent} />
             </Section>
             <Section>
                 <Title />
