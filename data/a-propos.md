@@ -2,6 +2,7 @@
 
 title: À Propos
 path: /a-propos
+order: 1
 
 ---
 
@@ -37,4 +38,6 @@ Ethics by design vous propose ainsi un fil de conférences en continu pendant 2 
 
 Tout comme lors des éditions 2017 et 2018 de l’évènement, nous vous proposons en parallèle de participer à la construction des services de demain en traitant ces thématiques avec le plus d’horizontalité possible à travers de nombreux formats participatifs, des classiques ateliers aux débats mouvants et fishbowls.
 
-Ce afin de permettre à ceux qui constituent le public traditionnellement hétérogène d’Ethics by design de pouvoir dialoguer entre eux : designers, studios, agences, universitaires, journalistes, chefs de projet et consultants. Alors, vous en êtes ?
+Ce afin de permettre à ceux qui constituent le public traditionnellement hétérogène d’Ethics by design de pouvoir dialoguer entre eux : designers, studios, agences, universitaires, journalistes, chefs de projet et consultants. 
+
+##Alors, vous en êtes ?
