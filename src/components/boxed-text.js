@@ -1,7 +1,9 @@
 import React from "react"
 
+import style from "./boxed-text.module.css"
+
 export default function BoxedText(props) {
     return (
-        <h3 className="boxed">{props.children}</h3>
+        <div className={style.boxed}>{props.children}</div>
     )
 };

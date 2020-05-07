@@ -9,6 +9,11 @@ import Address from "../components/address"
 import JourProgramme from "../components/jour-programme"
 import NumberedList from "../components/numbered-list"
 
+const CONTENT_TYPE = {
+    EVENT: 'event',
+    PROGRAMMES: 'programmes'
+};
+
 export const query = graphql`
   query {
     site {
@@ -22,11 +27,27 @@ export const query = graphql`
                 frontmatter {
                     path
                     title
-                    programmeJeudi {
-                        name
-                    }
-                    programmeVendredi {
-                        name
+                    titleComplet
+                    order
+                    type
+                    programmes {
+                        jourTitle
+                        ouvertureHeure
+                        ouvertureTitle
+                        horaire {
+                            heure
+                            title
+                            numero
+                            type
+                            categorie
+                            speaker {
+                                name
+                                role
+                            }
+                            salle
+                        }
+                        fermetureHeure
+                        fermetureTitle
                     }
                 }
                 html
@@ -37,24 +58,37 @@ export const query = graphql`
 `
 
 const Programme = ({ location, data }) => {
-    const programmeData = data.allMarkdownRemark.edges[0].node.frontmatter;
-    console.log(programmeData);
+
+    // Page title
+    let title = '';
+    // Array of events with full description
+    const events = [];
+    // Array of programmes days
+    let programmes = [];
+
+    data.allMarkdownRemark.edges.forEach((edge) => {
+        if (edge.node.frontmatter.type === CONTENT_TYPE.PROGRAMMES) {
+            title = edge.node.frontmatter.title;
+            programmes = edge.node.frontmatter.programmes;
+        } else if (edge.node.frontmatter.type === CONTENT_TYPE.EVENT) {
+            events.push({
+                order: edge.node.frontmatter.order,
+                title: edge.node.frontmatter.titleComplet,
+                text: edge.node.html
+            });
+        }
+    });
 
     return (
         <Layout location={location}>
             <Section>
-                <Title />
-                <NumberedList />
+                <Title>{title}</Title>
+                <NumberedList items={events.sort((a, b) => parseFloat(a.order) - parseFloat(b.order))} />
             </Section>
             <Section>
-                <Title>Evènement ouvert au public</Title>
-                <Hero />
+                {programmes.map((programme) => <JourProgramme key={programme.jourTitle} programme={programme} />)}
             </Section>
             <Section>
-                <JourProgramme talks={programmeData.programmeJeudi} />
-            </Section>
-            <Section>
-                <JourProgramme talks={programmeData.programmeVendredi} />
             </Section>
             <Section dark>
                 <Hero />
