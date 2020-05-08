@@ -1,7 +1,8 @@
 import React from "react"
 
 export default function Number(props) {
+    const leadingZero = props.index < 10 ? '0' : '';
     return (
-        <span className="number">0{props.children}</span>
+        <span className="number">{leadingZero}{props.index}</span>
     )
 };

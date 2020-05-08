@@ -1,0 +1,17 @@
+.number {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 75%;
+  /* or 27px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+  -moz-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
+}
