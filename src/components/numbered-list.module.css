@@ -1,6 +1,6 @@
 .numbered ol {
   width: 100%;
-  max-width: 1000px;
+  max-width: 850px; /* max width is 1000px - 150px padding that is reserved for numbers */
   counter-reset: list-item, decimal-leading-zero;
   list-style: none;
   padding-left: 150px;
