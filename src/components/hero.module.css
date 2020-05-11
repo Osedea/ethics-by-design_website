@@ -32,6 +32,9 @@
     flex: 4;
     background-color: black;
     width: 640px;
+}
+
+.withtitle {
     margin-left: 130px;
 }
 
@@ -59,7 +62,22 @@
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    position: relative;
 }
+
+.side header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    padding: 10px;
+}
+
+.dark .side header {
+    border-color: var(--main-bg-color)
+}
+
 
 .side.big p {
     font-family: Helvetica;
