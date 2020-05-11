@@ -36,4 +36,4 @@ En octobre 2017, la Métropole Européenne de Lille (MEL) a décroché le titre 
 
 <br />
 
-![](/images/lille-logos.png)
+![logo capital du design et](/images/lille-logos.png)

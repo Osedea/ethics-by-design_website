@@ -12,13 +12,10 @@ export default function PrefixedImage(props) {
     if (!props.alt) {
         console.error('You should provide an alt text');
     }
-    if (!props.description) {
-        console.error('You should provide a description text');
-    }
 
     if (props.cover) {
         return (
-            <div className={style.background} style={{ backgroundImage: `url(${src})` }} />
+            <div className={style.background} title={props.alt} style={{ backgroundImage: `url(${src})` }} />
         );
     }
 

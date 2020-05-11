@@ -13,10 +13,10 @@ export default function Footer(props) {
       </div>
       <div className={style.footerSocial}>
         <ul>
-          {props.networks.map(({ url, icon }) => (
+          {props.networks.map(({ url, icon, type }) => (
             <li key={icon}>
               <a href={url} target="_blank" rel="noopener">
-                <PrefixedImage src={icon} />
+                <PrefixedImage src={icon} alt={`Logo ${type}`} />
               </a>
             </li>
           ))}

@@ -12,8 +12,8 @@ export default function Hero(props) {
                 </div>
             )}
             <div className={[style.media, props.title && style.withtitle].join(' ')}>
-                <PrefixedImage src={props.media} cover />
-                {props.hasVideo && <PrefixedImage src='/assets/play.png' className={style.play} />}
+                <PrefixedImage src={props.media} alt={props.title || props.sideTitle} cover />
+                {props.hasVideo && <PrefixedImage src='/assets/play.png' alt="Jouer la vidéo" className={style.play} />}
             </div>
             <div className={['bordered', style.side, props.bigSide && style.big].join(' ')}>
                 {props.sideTitle && <header>{props.sideTitle}</header>}
