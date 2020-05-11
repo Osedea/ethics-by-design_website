@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.mention p {
+.mention > * {
   text-transform: uppercase;
   color: var(--main-bg-color);
   font-size: 14px;

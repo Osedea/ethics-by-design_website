@@ -1,17 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Card from './card';
+import Sponsor from './sponsor';
 import style from "./sponsors.module.css"
 
 export default function Sponsors(props) {
   return (
-    <div className={style.sponsor}>
-      <div className="sponsor-main">{props.main}</div>
-      <ul>
+    <div className={style.sponsors}>
+      <div className={style.main}>{props.main}</div>
+      <ul className={style.list}>
         {props.items.map((item, index) => (
           <li key={index}>
-              <Card linkTarget={item.link} linkText={item.name} />
+            <Sponsor
+                target={item.link}
+                text={item.name}
+            />
           </li>
         ))}
       </ul>

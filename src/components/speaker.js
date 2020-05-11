@@ -6,28 +6,28 @@ import Tag from "./tag"
 import style from "./speaker.module.css"
 
 export default function Speaker(props) {
-  const nameAndTitleClass = props.cut ? "full-width" : "pulled-up"
+  const nameAndTitleClass = props.cut ? style.fullwidth : style.pulledup;
 
   return (
     <article className={style.speaker}>
-      {props.picture_url && <PrefixedImage src={props.picture_url} />}
-      <div className={nameAndTitleClass}>
-        <p className="speaker-name">{props.name}</p>
-        <p className="speaker-title">{props.title}</p>
-      </div>
-      {!props.cut ? (
-        <div>
-          <p>{props.description}</p>
-          {props.links && props.links.length > 0
-            ? <div className="speaker-social">
-                {props.links.map((link) => (
-                <Tag link={link.target} value={link.text} />
-                ))}
-            </div>
-            : null
-        }
+        {props.picture_url && <PrefixedImage src={props.picture_url} />}
+        <div class={style.content}>
+            <header className={nameAndTitleClass}>{props.name}</header>
+            <header className={style.title}>{props.role}</header>
         </div>
-      ) : null}
+        {!props.cut ? (
+            <div>
+            <p>{props.description}</p>
+            {props.links && props.links.length > 0
+                ? <footer className={style.social}>
+                    {props.links.map((link) => (
+                    <Tag link={link.target} value={link.text} />
+                    ))}
+                </footer>
+                : null
+            }
+            </div>
+        ) : null}
     </article>
   )
 }

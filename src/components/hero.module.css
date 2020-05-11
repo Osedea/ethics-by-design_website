@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 400px;
+    margin-top: 60px;
+}
+
+.title > div {
+    margin: 20px;
+}
+
+.title {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-bg-color);
+}
+
+.title p {
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 115.99%;
+    margin: 0;
+}
+
+.media {
+    flex: 4;
+    background-color: black;
+    width: 640px;
+    margin-left: 130px;
+}
+
+.dark .media {
+    background-color: var(--main-bg-color);
+}
+
+.video {
+
+}
+
+.image {
+
+}
+
+.play {
+    position: absolute;
+    left: calc(50% - 22.5px);
+    top: calc(50% - 22.5px);
+}
+
+.side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.side.big p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 115.99%;
+}
+
+.dark .title, .dark .side {
+    background-color: black;
+    color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
+}

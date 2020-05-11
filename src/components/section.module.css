@@ -3,6 +3,7 @@
   padding: 20px;
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
 .vertical {
@@ -17,4 +18,8 @@
   width: 1080px;
   display: flex;
   flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
 }
