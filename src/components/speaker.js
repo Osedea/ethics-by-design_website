@@ -10,8 +10,8 @@ export default function Speaker(props) {
 
   return (
     <article className={style.speaker}>
-        {props.picture_url && <PrefixedImage src={props.picture_url} />}
-        <div class={style.content}>
+        {props.picture_url && <PrefixedImage src={props.picture_url} alt={`Photo ${props.name}`} />}
+        <div className={style.content}>
             <header className={nameAndTitleClass}>{props.name}</header>
             <header className={style.title}>{props.role}</header>
         </div>

@@ -10,10 +10,9 @@ export default function Sponsors(props) {
       <ul className={style.list}>
         {props.items.map((item, index) => (
           <li key={index}>
-            <Sponsor
-                target={item.link}
-                text={item.name}
-            />
+            <a href={item.link} target="_blank">
+                {item.name}
+            </a>
           </li>
         ))}
       </ul>

@@ -99,7 +99,7 @@ const Index = ({ data, location}) => {
         </Section>
         <Section>
             <Grid columns="2" rows="1">
-                <PrefixedImage src={pourquoi.frontmatter.media} />
+                <PrefixedImage src={pourquoi.frontmatter.media} alt="Des gens discutent" />
                 <Card
                     title={pourquoi.frontmatter.title}
                     htmlContent={pourquoi.html}

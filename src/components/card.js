@@ -29,7 +29,7 @@ export default function Card(props) {
             {props.linkText
                 ? <footer className={style.footer}>
                     {link}
-                    <PrefixedImage src="/assets/arrow-right.png" />
+                    <PrefixedImage src="/assets/arrow-right.png" alt="Flèche vers la droite" />
                 </footer>
                 : null
             }

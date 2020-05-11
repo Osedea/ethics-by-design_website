@@ -11,7 +11,8 @@ import NumberedList from "../components/numbered-list"
 
 const CONTENT_TYPE = {
     EVENT: 'event',
-    PROGRAMMES: 'programmes'
+    PROGRAMMES: 'programmes',
+    PLACE: 'lieu',
 };
 
 export const query = graphql`
@@ -30,6 +31,8 @@ export const query = graphql`
                     titleComplet
                     order
                     type
+                    media
+                    description
                     programmes {
                         jourTitle
                         ouvertureHeure
@@ -65,6 +68,7 @@ const Programme = ({ location, data }) => {
     const events = [];
     // Array of programmes days
     let programmes = [];
+    let place = null;
 
     data.allMarkdownRemark.edges.forEach((edge) => {
         if (edge.node.frontmatter.type === CONTENT_TYPE.PROGRAMMES) {
@@ -76,6 +80,8 @@ const Programme = ({ location, data }) => {
                 title: edge.node.frontmatter.titleComplet,
                 text: edge.node.html
             });
+        } else if (edge.node.frontmatter.type === CONTENT_TYPE.PLACE) {
+            place = edge.node;
         }
     });
 
@@ -91,8 +97,13 @@ const Programme = ({ location, data }) => {
             <Section>
             </Section>
             <Section dark>
-                <Hero />
-                <Address />
+                <Hero
+                    media={place.frontmatter.media}
+                    sideTitle={place.frontmatter.title}
+                    side={place.frontmatter.description}
+                    dark
+                />
+                <address className="light" dangerouslySetInnerHTML={{ __html: place.html }} />
             </Section>
         </Layout>
     );
