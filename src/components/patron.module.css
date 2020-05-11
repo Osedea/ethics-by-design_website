@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.logo {
+    border-bottom: solid 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.links {
+    position: absolute;
+    bottom: 10px;
+}

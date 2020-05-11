@@ -1,0 +1,19 @@
+.container {
+    border: solid 3px black;
+    display: flex;
+}
+
+.boxlogo {
+    flex: 1;
+    border-right: solid 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.boxtext {
+    flex: 6;
+    justify-content: center;
+    padding: 30px;
+}

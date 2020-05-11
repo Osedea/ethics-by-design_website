@@ -34,12 +34,12 @@ export const query = graphql`
 const APropos = ({ location, data }) => {
     return (
         <Layout location={location}>
-            {data.allMarkdownRemark.edges.map((edge) => {
-                return <Section key={edge.node.frontmatter.title}>
+            {data.allMarkdownRemark.edges.map((edge) => (
+                <Section key={edge.node.frontmatter.title}>
                     <Title>{edge.node.frontmatter.title}</Title>
                     <ContentWrapper content={edge.node.html} />
-                </Section>;
-            })}
+                </Section>
+            ))}
         </Layout>
     );
 }

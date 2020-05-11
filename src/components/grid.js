@@ -2,6 +2,8 @@ import React from "react"
 
 import styled from "styled-components"
 
+import Inset from "./inset"
+
 const GridComponent = styled.div`
   display: grid;
   flex: 1;
@@ -12,5 +14,19 @@ const GridComponent = styled.div`
 `
 
 export default function Grid(props) {
-  return <GridComponent {...props}>{props.children}</GridComponent>
+    const grid = (
+        <GridComponent {...props}>
+            {props.children}
+        </GridComponent>
+    );
+
+    if (props.offsetLeft) {
+        return (
+            <Inset>
+                {grid}
+            </Inset>
+        );
+    }
+
+    return grid;
 }

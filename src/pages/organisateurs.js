@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
+import Inset from "../components/inset"
+import Grid from "../components/grid"
 import Section from "../components/section"
 import Speaker from "../components/speaker"
 import Patron from "../components/patron"
@@ -24,15 +26,44 @@ export const query = graphql`
                     title
                     organizers {
                         name
+                        role
+                        picture_url
+                        description
+                        links {
+                            text
+                            target
+                        }
                     }
                     contributors {
+                        name
+                        role
+                        picture_url
+                        description
+                        links {
+                            text
+                            target
+                        }
+                    }
+                    volunteers {
                         name
                     }
                     skillsPatrons {
                         name
+                        picture_url
+                        description
+                        links {
+                            text
+                            target
+                        }
                     }
                     moneyPatrons {
                         name
+                        picture_url
+                        description
+                        links {
+                            text
+                            target
+                        }
                     }
                 }
                 html
@@ -43,47 +74,51 @@ export const query = graphql`
 `
 
 const Organisateurs = ({ data, location }) => {
-    const orgData = data.allMarkdownRemark.edges[0].node.frontmatter;
+    const orgData = data.allMarkdownRemark.edges[0].node;
 
     return (
         <Layout location={location}>
-            <Section>
-                <Title>{orgData.title}</Title>
-                <div>
-                    {orgData.organizers.map((speaker) => (
-                        <Speaker {...speaker} />
+            <Section inset>
+                <Title>{orgData.frontmatter.title}</Title>
+                <Grid columns={3} offsetLeft>
+                    {orgData.frontmatter.organizers.map((speaker) => (
+                        <Speaker key={speaker.name} {...speaker} />
                     ))}
-                </div>
+                </Grid>
             </Section>
             <Section>
                 <Title>Les Designers Ethiques</Title>
-                <BoxDesignersEthiques />
+                <Inset>
+                    <BoxDesignersEthiques contentHtml={orgData.html} />
+                </Inset>
             </Section>
             <Section>
-                <Title>Benevoles</Title>
-                <Volunteers />
+                <Title>Bénévoles</Title>
+                <Volunteers volunteers={orgData.frontmatter.volunteers} />
             </Section>
             <Section dark>
-                <Title>Avec la contribution</Title>
-                {orgData.contributors.map((speaker) => (
-                    <Speaker {...speaker} />
-                ))}
+                <Title className="light">Avec la contribution</Title>
+                <Grid columns={3} offsetLeft>
+                    {orgData.frontmatter.contributors.map((speaker) => (
+                        <Speaker key={speaker.name} {...speaker} dark />
+                    ))}
+                </Grid>
             </Section>
             <Section>
                 <Title>Mécènes de compétences</Title>
-                <div>
-                    {orgData.skillsPatrons.map((patron) => (
-                        <Patron {...patron} />
+                <Grid columns={3}>
+                    {orgData.frontmatter.skillsPatrons.map((patron) => (
+                        <Patron key={patron.name} {...patron} />
                     ))}
-                </div>
+                </Grid>
             </Section>
             <Section>
                 <Title>Mécènes financiers</Title>
-                <div>
-                    {orgData.moneyPatrons.map((patron) => (
-                        <Patron {...patron} />
+                <Grid columns={3}>
+                    {orgData.frontmatter.moneyPatrons.map((patron) => (
+                        <Patron key={patron.name} {...patron} />
                     ))}
-                </div>
+                </Grid>
             </Section>
         </Layout>
     );

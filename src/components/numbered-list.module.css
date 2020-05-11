@@ -3,7 +3,7 @@
   max-width: 850px; /* max width is 1000px - 150px padding that is reserved for numbers */
   counter-reset: list-item, decimal-leading-zero;
   list-style: none;
-  padding-left: 150px;
+  padding-left: 100px;
 }
 
 .numbered ol li {
@@ -28,7 +28,7 @@
   font-size: 97px;
   line-height: 78%;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
 
   letter-spacing: -0.02em;
