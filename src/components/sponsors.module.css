@@ -1,13 +1,29 @@
-.sponsor {
+.sponsors {
+    max-width: 100%;
 }
 
-.sponsor ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+.main {
+    color: var(--main-bg-color);
+    margin: 90px;
+    text-align: center;
+    font-size: 24px;
 }
 
-.sponsor li a {
-  color: var(--main-bg-color);
-  text-decoration: none;
+ul.list {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+ul.list li {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.sponsors li a {
+    color: var(--main-bg-color);
+    text-decoration: none;
 }

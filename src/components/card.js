@@ -1,17 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import PrefixedImage from "./prefixed-image"
+import style from "./card.module.css"
+
 export default function Card(props) {
-    const titleClass = props.titleDark ? 'dark' : '';
-    let cardClass = 'card';
-
-    if (props.dark) {
-        cardClass += ' dark';
-    }
-    if (props.small) {
-        cardClass += ' small';
-    }
-
     let link;
 
     if (props.internalLink) {
@@ -29,13 +22,15 @@ export default function Card(props) {
     }
 
     return (
-        <article className={cardClass}>
-            {props.title ? <h2 className={titleClass}>{props.title}</h2> : null}
-            <p>{props.content}</p>
+        <article className={[style.card, props.dark && style.dark, props.small && style.small, !props.linkText && style.nofooter].join(' ')}>
+            {props.title ? <h2 className={[style.title, props.titleDark && style.titleDark].join(' ')} dangerouslySetInnerHTML={{ __html: props.title }} /> : null}
+            {props.content && <p>{props.content}</p>}
+            {props.htmlContent && <div dangerouslySetInnerHTML={{ __html: props.htmlContent }} />}
             {props.linkText
-                ? <div className="card-footer">
+                ? <footer className={style.footer}>
                     {link}
-                </div>
+                    <PrefixedImage src="/assets/arrow-right.png" />
+                </footer>
                 : null
             }
         </article>

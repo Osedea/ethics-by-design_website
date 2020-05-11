@@ -2,6 +2,39 @@
     --main-bg-color: #ceffaf;
 }
 
-a:visited {
+a, a:hover, a:active, a:visited {
     color: black;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    font-weight: bold;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 137.99%;
+    letter-spacing: -0.02em;
+}
+
+.bordered {
+    border: solid 3px black;
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light {
+    color: var(--main-bg-color);
+}
+
+img {
+    max-width: 100%;
 }
