@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import style from "./articles-list.module.css"
+import PrefixedImage from "./prefixed-image"
 
 export default function ArticlesList(props) {
   return (
@@ -10,9 +11,11 @@ export default function ArticlesList(props) {
         {props.items.map(({ node }) => (
           <li key={node.id}>
             <article>
-              <h3>{node.frontmatter.title}</h3>
-              <span>Par {node.frontmatter.author}</span>
-              <Link to={node.linkTarget}>{node.linkText}</Link>
+                <Link to={node.frontmatter.path}>
+                    <h3>{node.frontmatter.title}</h3>
+                    <author>Par {node.frontmatter.author}</author>
+                    <PrefixedImage src="/assets/arrow-right.png" alt="Flèche vers la droite" />
+                </Link>
             </article>
           </li>
         ))}
