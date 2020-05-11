@@ -20,6 +20,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
                         date(formatString: "YYYY-MM-DD")
                         title
                         author
+                        toReadAlso {
+                            path
+                            title
+                            author
+                        }
                     }
                     html
                 }

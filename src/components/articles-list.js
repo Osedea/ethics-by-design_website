@@ -8,12 +8,12 @@ export default function ArticlesList(props) {
   return (
     <div className={style.articlesList}>
       <ul>
-        {props.items.map(({ node }) => (
-          <li key={node.id}>
+        {props.items.map(({ path, title, author }) => (
+          <li key={path}>
             <article>
-                <Link to={node.frontmatter.path}>
-                    <h3>{node.frontmatter.title}</h3>
-                    <author>Par {node.frontmatter.author}</author>
+                <Link to={path}>
+                    <h3>{title}</h3>
+                    <span>Par {author}</span>
                     <PrefixedImage src="/assets/arrow-right.png" alt="Flèche vers la droite" />
                 </Link>
             </article>

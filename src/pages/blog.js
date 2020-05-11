@@ -32,17 +32,19 @@ const Blog = ({
   },
   location,
 }) => {
-  return (
-    <Layout location={location}>
-      {/* <Section>
-        <Hero />
-      </Section> */}
-      <Section>
-        <Title>Articles</Title>
-        <ArticlesList items={edges} />
-      </Section>
-    </Layout>
-  )
+    const articles = edges.map(({ node }) => node.frontmatter);
+
+    return (
+        <Layout location={location}>
+        {/* <Section>
+            <Hero />
+        </Section> */}
+        <Section>
+            <Title>Articles</Title>
+            <ArticlesList items={articles} />
+        </Section>
+        </Layout>
+    )
 }
 
 export default Blog;
