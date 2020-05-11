@@ -12,7 +12,7 @@ export default function Patron(props) {
                 <p className="patron-title">{props.title}</p>
                 {props.links && props.links.length > 0
                     ? <div className="patron-social">
-                        {props.links.map((link) => <Tag link={link.target} value={link.text} />)}
+                        {props.links.map((link) => <Tag link={link.target} text={link.text} />)}
                     </div>
                     : null
                 }

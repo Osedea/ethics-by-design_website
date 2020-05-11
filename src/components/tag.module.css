@@ -1,0 +1,15 @@
+.container {
+    display: inline-block;
+    padding: 0 5px;
+    background-color: black;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.link, .link:hover, .link:focus, .link:active {
+    font-size: 9px;
+    line-height: 9px;
+    color: var(--main-bg-color);
+    text-decoration: none;
+    vertical-align: middle;
+}

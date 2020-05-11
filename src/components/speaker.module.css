@@ -1,26 +1,27 @@
 .speaker {
   border: solid 3px black;
+  min-width: 200px;
 }
 
 .speaker img {
     border-bottom: solid 3px black;
 }
 
-.content {
+.headers {
     padding: 15px;
+}
+
+.headers.pullup {
+    padding: 10px;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
+    width: 80%;
+    margin-top: -4px;
 }
 
 .speaker header {
     text-transform: uppercase;
     font-size: 12px;
-}
-
-.fullwidth {
-
-}
-
-.pulledup {
-
 }
 
 .speaker header.title {
@@ -29,6 +30,14 @@
     padding-top: 5px;
 }
 
+.description {
+    padding: 0 15px;
+}
+
 .social {
 
+}
+
+.profilepic {
+    width: 100%;
 }
