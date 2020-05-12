@@ -11,6 +11,7 @@ import Sponsors from "../components/sponsors"
 import Mention from "../components/mention"
 import Grid from "../components/grid"
 import PrefixedImage from "../components/prefixed-image"
+import Pills from "../components/pills"
 
 export const query = graphql`
   query {
@@ -29,6 +30,8 @@ export const query = graphql`
                     path
                     author
                     description
+                    month
+                    days
                     lieu
                     lieuLabel
                     media
@@ -67,6 +70,10 @@ const Index = ({ data, location}) => {
     return (
         <Layout location={location}>
         <Section>
+            <Pills>
+                <div>{edition.frontmatter.month}</div>
+                <div>{edition.frontmatter.days}</div>
+            </Pills>
             <Hero
                 title={(
                     <>
