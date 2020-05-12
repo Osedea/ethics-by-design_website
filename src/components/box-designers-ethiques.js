@@ -1,17 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import LogoDesignersEthiques from "./logo-designers-ethiques"
+import style from "./box-designers-ethiques.module.css"
 
 export default function BoxDesignersEthiques(props) {
     return (
-        <div className="box-designers-ethiques">
-            <div className="box">
+        <div className={style.container}>
+            <div className={style.boxlogo}>
                 <LogoDesignersEthiques />
             </div>
-            <div className="box">
-                {props.content}
-            </div>
+            <div className={style.boxtext} dangerouslySetInnerHTML={{ __html: props.contentHtml }} />
         </div>
     )
 };

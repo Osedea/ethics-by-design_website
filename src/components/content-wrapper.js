@@ -1,11 +1,11 @@
 import React from "react"
 
-import style from "./content-wrapper.module.css"
+import Inset from "./inset"
 
 export default function ContentWrapper(props) {
     return (
-        <div className={style.contentWrapper}>
+        <Inset>
             <div dangerouslySetInnerHTML={{ __html: props.content }} />
-        </div>
+        </Inset>
     )
 };

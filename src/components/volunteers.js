@@ -1,16 +1,16 @@
 import React from "react"
 
-import style from "./volunteers.module.css"
+import Inset from "./inset"
 
 export default function Volunteers(props) {
     return (
-        <div className={style.volunteers}>
-            {props.volunteers && props.volunteers.length > 0
-                ? <ul>
-                    {props.volunteers.map((item) => <li>{item.text}</li>)}
-                </ul>
-                : <p>Pas de volontaires à afficher pour le moment</p>
-            }
-        </div>
+        <Inset>
+            <p>
+                {props.volunteers && props.volunteers.length > 0
+                    ? props.volunteers.map((item) => item.name).join(' — ')
+                    : <p>Pas de volontaires à afficher pour le moment</p>
+                }
+            </p>
+        </Inset>
     )
 };

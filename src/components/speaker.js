@@ -7,7 +7,7 @@ import style from "./speaker.module.css"
 
 export default function Speaker(props) {
   return (
-    <article className={style.speaker}>
+    <article className={[style.speaker, props.dark && style.dark].join(' ')}>
         {props.picture_url && <PrefixedImage className={style.profilepic} src={props.picture_url} alt={`Photo ${props.name}`} />}
         <div className={[style.headers, !props.cut && style.pullup].join(' ')}>
             <header>{props.name}</header>

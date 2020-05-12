@@ -2,6 +2,6 @@ import React from "react"
 
 export default function Title(props) {
     return (
-        <h1>{props.children}</h1>
+        <h2 {...props} style={{ marginBottom: '60px', ...props.style }}>{props.children}</h2>
     )
 };

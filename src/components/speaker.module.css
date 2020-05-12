@@ -1,10 +1,20 @@
 .speaker {
   border: solid 3px black;
   min-width: 200px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.speaker.dark {
+    background-color: var(--main-bg-color);
 }
 
 .speaker img {
     border-bottom: solid 3px black;
+}
+
+.speaker.dark img {
+    border: none;
 }
 
 .headers {
@@ -35,7 +45,13 @@
 }
 
 .social {
+   position: absolute;
+   bottom: 0;
+}
 
+.social span {
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .profilepic {
