@@ -8,10 +8,10 @@ module.exports.onPostBuild = ({ reporter }) => {
 // Create blog pages dynamically
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/pages/blog-post.js`)
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
   const result = await graphql(`
     query {
-        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {regex: "/blog.*/"}}}) {
+        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {regex: "/blog-post\\/.*/"}}}) {
             edges {
                 node {
                     id
