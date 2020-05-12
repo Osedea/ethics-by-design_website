@@ -106,7 +106,7 @@ const Organisateurs = ({ data, location }) => {
             </Section>
             <Section>
                 <Title>Mécènes de compétences</Title>
-                <Grid columns={3}>
+                <Grid columns={3} offsetLeft>
                     {orgData.frontmatter.skillsPatrons.map((patron) => (
                         <Patron key={patron.name} {...patron} />
                     ))}
@@ -114,7 +114,7 @@ const Organisateurs = ({ data, location }) => {
             </Section>
             <Section>
                 <Title>Mécènes financiers</Title>
-                <Grid columns={3}>
+                <Grid columns={3} offsetLeft>
                     {orgData.frontmatter.moneyPatrons.map((patron) => (
                         <Patron key={patron.name} {...patron} />
                     ))}
