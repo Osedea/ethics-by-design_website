@@ -85,7 +85,6 @@ const Index = ({ data, location}) => {
                 media={edition.frontmatter.media}
                 side={edition.frontmatter.description}
                 bigSide
-                hasVideo
             />
         </Section>
         <Section>
