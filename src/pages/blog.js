@@ -9,18 +9,19 @@ import ArticlesList from "../components/articles-list"
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD")
-            title
-            author
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {path: {regex: "/blog.*/"}}}) {
+        edges {
+          node {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+                path
+                date(formatString: "YYYY-MM-DD")
+                title
+                author
+            }
           }
         }
-      }
     }
   }
 `
@@ -31,18 +32,19 @@ const Blog = ({
   },
   location,
 }) => {
-  console.log(edges)
-  return (
-    <Layout location={location}>
-      <Section>
-        <Hero />
-      </Section>
-      <Section>
-        <Title />
-        <ArticlesList items={edges} />
-      </Section>
-    </Layout>
-  )
+    const articles = edges.map(({ node }) => node.frontmatter);
+
+    return (
+        <Layout location={location}>
+        {/* <Section>
+            <Hero />
+        </Section> */}
+        <Section>
+            <Title>Articles</Title>
+            <ArticlesList items={articles} />
+        </Section>
+        </Layout>
+    )
 }
 
 export default Blog;
