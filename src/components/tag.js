@@ -1,10 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
+
+import style from "./tag.module.css"
 
 export default function Tag(props) {
     return (
-        <span className="tag">
-            <Link to={props.link}>{props.text}</Link>
+        <span className={style.container}>
+            <a
+                href={props.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.link}
+            >
+                {props.text.toUpperCase()}
+            </a>
         </span>
     )
 };

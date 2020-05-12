@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
 import Section from "../components/section"
-import Speaker from "../components/speaker"
+import Speakers from "../components/speakers"
 import Title from "../components/title"
 
 export const query = graphql`
@@ -23,6 +23,7 @@ export const query = graphql`
                         name
                         role
                         picture_url
+                        description
                         links {
                             target
                             text
@@ -37,18 +38,13 @@ export const query = graphql`
 `
 
 const Intervenants = ({ location, data }) => {
-    console.log('intervenants', data);
     const intervenants = data.allMarkdownRemark.edges[0].node.frontmatter;
 
     return (
         <Layout location={location}>
             <Section>
                 <Title>{intervenants.title}</Title>
-                <div>
-                    {intervenants.speakers.map((speaker) => (
-                        <Speaker {...speaker} />
-                    ))}
-                </div>
+                <Speakers speakers={intervenants.speakers} />
             </Section>
         </Layout>
     );
