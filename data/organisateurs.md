@@ -51,25 +51,70 @@ organizers:
           target: https://twitter.com/iergo
 
 contributors:
+    - name: Hubert Guillaud
+      role: rédacteur en chef de InternetActu.net
+      description: TODO
+      picture_url: /images/thomas-thibault.jpg
+      links:
+        - text: twitter
+          target: https://twitter.com/hubertguillaud
+    - name: Irénée Regnauld
+      role: bloggueur de Mais Où Va Le Web & co-fondateur du Mouton Numérique
+      description: TODO
+      picture_url: /images/thomas-thibault.jpg
+      links:
+        - text: linkedin
+          target: https://www.linkedin.com/in/ireneeregnauld/
+        - text: twitter
+          target: https://twitter.com/IreR1
     - name: Thomas Thibault
       role: designer et co-fondateur collectif BAM
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
       picture_url: /images/thomas-thibault.jpg
       links:
         - text: linkedin
-          target: https://linkedin.com
-    - name: Thomas Thibault
-      role: designer et co-fondateur collectif BAM
+          target: https://www.linkedin.com/in/thomas-thibault/
+        - text: twitter
+          target: https://twitter.com/Thibault_Thms
+    - name: Estelle Hary
+      role: designer à la CNIL et co-fondatrice de Design Friction
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
       picture_url: /images/thomas-thibault.jpg
       links:
         - text: linkedin
-          target: https://linkedin.com
-
+          target: https://www.linkedin.com/in/estelle-hary/
+        - text: twitter
+          target: https://twitter.com/EstelleHary
+    - name: Régis Chatellier
+      role: chargé d'études prospectives à la CNIL
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
+      picture_url: /images/thomas-thibault.jpg
+      links:
+        - text: linkedin
+          target: https://www.linkedin.com/in/regischatellier/
+        - text: twitter
+          target: https://twitter.com/el_Reg
+    - name: Gauthier Rousshile
+      role: designer
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
+      picture_url: /images/thomas-thibault.jpg
+      links:
+        - text: twitter
+          target: https://twitter.com/AsWalterRobin
+    - name: Julien de Sanctis
+      role: doctorant & philosophe
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
+      picture_url: /images/thomas-thibault.jpg
+      links:
+        - text: linkedin
+          target: https://www.linkedin.com/in/julien-de-sanctis-8a418979/
+        - text: twitter
+          target: https://twitter.com/JulienDeSanctis
+          
 volunteers:
-    - name: Volontaire 1
-    - name: Volontaire 2
-    - name: Volontaire 3
+#    - name: Volontaire 1
+#    - name: Volontaire 2
+#    - name: Volontaire 3
 
 skillsPatrons:
     - name: / OSEDEA
