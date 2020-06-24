@@ -113,8 +113,6 @@ contributors:
           
 volunteers:
     - name: Volontaire 1
-#    - name: Volontaire 2
-#    - name: Volontaire 3
 
 skillsPatrons:
     - name: / OSEDEA
