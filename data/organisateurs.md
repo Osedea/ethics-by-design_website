@@ -7,7 +7,7 @@ organizers:
     - name: Marie-Cécile Godwin-Paccard
       role: Systemic designer & UX researcher
       description: TODO
-      picture_url: /images/mcgp.jpg
+      picture_url: /images/mcgp.png
       links:
         - text: linkedin
           target: https://www.linkedin.com/in/mcpaccard/
@@ -16,7 +16,7 @@ organizers:
     - name: Dominique Karadjian
       role: prospectiviste
       description: TODO
-      picture_url: /images/karl.jpg
+      picture_url: /images/dominique.jpg
       links:
         - text: linkedin
           target: https://www.linkedin.com/in/dominiquekaradjian/
