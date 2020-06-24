@@ -112,7 +112,7 @@ contributors:
           target: https://twitter.com/JulienDeSanctis
           
 volunteers:
-#    - name: Volontaire 1
+    - name: Volontaire 1
 #    - name: Volontaire 2
 #    - name: Volontaire 3
 
