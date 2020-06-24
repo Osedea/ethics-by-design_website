@@ -140,3 +140,5 @@ moneyPatrons:
 Ethics By Design est porté par **l’association Designers Éthiques**, une structure indépendante de **recherche-action autour des sujets de la responsabilité et de l’éthique au travers du design.**
 
 Lieu de rencontre pour des professionnels, chercheurs, étudiants, nous leur offrons un cadre pour s’interroger sur leurs pratiques et la transition numérique de notre société dans le but d’**inventer un avenir durable et responsable.**
+
+https://designersethiques.org
