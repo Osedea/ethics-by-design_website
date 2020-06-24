@@ -1,12 +1,12 @@
 ---
 
-title: Lille Métropole 2020
-subtitle: Capitale du design
+title: Ethics by design en ligne
+subtitle: Édition spéciale
 path: "/"
 media: /images/lille.jpg
 order: 2
 
-mainsponsor: CCI Grand lille
+mainsponsor: Direction Interministérielle du NUMérique
 
 sponsors:
     -
