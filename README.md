@@ -11,11 +11,6 @@
 
 https://www.figma.com/file/NxQnW3re4nq8Jw1Awpm4Uu/Designers-%C3%89thiques?node-id=0%3A1
 
-## What's the plan, Stan?
-
-* For blog posts : Use markdown : https://www.gatsbyjs.org/docs/adding-markdown-pages/
-* For admin : Markdown structured files ?
-
 ## 🚀 Quick start
 
 Navigate into your new site’s directory and start it up.
