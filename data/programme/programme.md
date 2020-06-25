@@ -3,15 +3,45 @@ title: Programme
 path: /programme
 type: programmes
 programmes:
-  - jourTitle: Semaine du 28 septembre au 2 octobre
+  - jourTitle: Lundi 28 septembre
+    ouvertureHeure: 16:00 - 16:30
+    ouvertureTitle: Introduction
+    fermetureHeure: 19:00
+    fermetureTitle: Conclusion
     horaire:
-      - heure: 9:00 - 9:30
+      - heure: 14:00 - 16:00
+        type: Atelier
+        title: Comment concevoir avec sobriété ?
+        categorie: Conception éco-responsable.
+        speaker:
+          name: À venir
+          role: -
+        salle: Salle d'atelier 1
+
+      - heure: 14:00 - 16:00
+        type: Atelier
+        title: Comment faire du design de service de location d'outils high tech ?
+        categorie: Conception éco-responsable.
+        speaker:
+          name: À venir
+          role: -
+        salle: Salle d'atelier 2
+
+      - heure: 16:00 - 16:30
+        type: Ouverture
+        categorie: Introduction.
+        speaker:
+          name: Marie-Cécile Gowdin-Paccard, Dominique Karadjian, Mellie La Roque, Karl Pineau, Raphaël Yharrassarry
+          role: Equipe d'organisation
+        salle: Salle de visioconférence
+
+      - heure: 16:30 - 17:30
         type: Keynote
         categorie: Design et morale.
         speaker:
           name: Elina Tossi
           role: Designer et chercheuse
-        salle: Amphitheatre
+        salle: Salle de visioconférence
 
       - heure: 9:30 - 10:40
         title: Impact Environnemental
