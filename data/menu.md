@@ -6,9 +6,9 @@ tabs:
       url: /a-propos
       highlighted: false
 
-    - label: Programme
-      url: /programme
-      highlighted: false
+#    - label: Programme
+#      url: /programme
+#      highlighted: false
 
     - label: Intervenants
       url: /intervenants
@@ -22,9 +22,9 @@ tabs:
       url: /blog
       highlighted: false
 
-    - label: Billetterie
-      url: /billetterie
-      highlighted: true
+#    - label: Billetterie
+#      url: /billetterie
+#      highlighted: true
 
 ---
 
