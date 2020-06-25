@@ -76,7 +76,7 @@ programmes:
         title: Conception éco-responsable
         numero: 1
         type: Atelier
-        categorie: Prospective : déconstruire nos croyances pour inventer de nouveaux futurs
+        categorie: Prospective, déconstruire nos croyances pour inventer de nouveaux futurs
         speaker:
           name: À venir
           role: coming
