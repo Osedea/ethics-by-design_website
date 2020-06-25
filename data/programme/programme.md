@@ -14,14 +14,10 @@ programmes:
         numero: 1
         type: Atelier
         categorie: Comment concevoir avec sobriété ?
-        speaker:
-          name: À venir
-          role: coming
         salle: Salle d'atelier 1
 
       - heure: 16:00 - 16:30
         type: Ouverture
-        categorie: Introduction.
         speaker:
           name: Équipe
           role: d'organisation
@@ -61,9 +57,6 @@ programmes:
       - heure: 14:00 - 16:00
         type: Atelier
         categorie: Comment faire du design de service de location d'outils high tech ?
-        speaker:
-          name: À venir
-          role: coming
         salle: Salle d'atelier 2
         
   - jourTitle: Mardi 29 septembre
@@ -84,7 +77,6 @@ programmes:
 
       - heure: 16:00 - 16:15
         type: Ouverture
-        categorie: Introduction.
         speaker:
           name: Équipe
           role: d'organisation
@@ -125,7 +117,7 @@ programmes:
     horaire:
       - heure: 14:00 - 16:00
         title: Economie et responsabilité des entreprises
-        numero: 1
+        numero: 3
         type: Atelier
         categorie: Comment monter une coopérative de designer ?
         speaker:
@@ -135,7 +127,6 @@ programmes:
 
       - heure: 16:00 - 16:15
         type: Ouverture
-        categorie: Introduction.
         speaker:
           name: Équipe
           role: d'organisation
@@ -144,15 +135,13 @@ programmes:
       - heure: 16:15 - 17:45
         type: Table-ronde
         title: Formation et posture du designer
-        numero: 1
+        numero: 2
         categorie: Comment créer des formations pronant la responsabilité ?
         speaker:
           name: Master Anthropocène, DSAA de La Souterraine, Agence les Sismo
         salle: Visioconférence
 
       - heure: 18:00 - 19:00
-        title: Economie et responsabilité des entreprises
-        numero: 2
         type: Keynote
         categorie: Economie et design, une pratique de redirection
         speaker:
@@ -163,7 +152,7 @@ programmes:
 
       - heure: 14:00 - 16:00
         title: Economie et responsabilité des entreprises
-        numero: 2
+        numero: 3
         type: Atelier
         categorie: Le label, une bonne solution ?
         speaker:
@@ -178,17 +167,13 @@ programmes:
     horaire:
       - heure: 14:00 - 16:00
         title: Politiques de l'innovation
-        numero: 1
+        numero: 4
         type: Atelier
-        categorie: Comment penser l'innovation pour qu'elle favorise l'intérêt général ? 
-        speaker:
-          name: À venir
-          role: coming
+        categorie: Comment penser l'innovation pour qu'elle favorise l'intérêt général ?
         salle: Salle d'atelier 1
 
       - heure: 16:00 - 16:15
         type: Ouverture
-        categorie: Introduction.
         speaker:
           name: Équipe
           role: d'organisation
@@ -197,7 +182,7 @@ programmes:
       - heure: 16:15 - 16:50
         type: Conférence
         title: Economie et responsabilité des entreprises
-        numero: 1
+        numero: 3
         categorie: Framasoft, retour d'expérience sur le projet de l'association, ses succès, ses limites.
         speaker:
           name: Pierre-Yves Gosset
@@ -205,7 +190,7 @@ programmes:
 
       - heure: 17:05 - 18:35
         title: Economie et responsabilité des entreprises
-        numero: 2
+        numero: 3
         type: Table-ronde
         categorie: Les modèles alternatifs d'entreprises de design
         speaker:
@@ -213,7 +198,7 @@ programmes:
 
       - heure: 18:35 - 19:10
         title: Economie et responsabilité des entreprises
-        numero: 2
+        numero: 3
         type: Conférence
         categorie: À venir
 
@@ -235,14 +220,13 @@ programmes:
     horaire:
       - heure: 14:00 - 16:00
         title: Politiques de l'innovation
-        numero: 1
+        numero: 4
         type: Atelier
         categorie: Comment designer pour un territoire ?
         salle: Salle d'atelier 1
 
       - heure: 16:00 - 16:15
         type: Ouverture
-        categorie: Introduction.
         speaker:
           name: Équipe
           role: d'organisation
@@ -251,22 +235,20 @@ programmes:
       - heure: 16:15 - 16:50
         type: Conférence
         title: Politiques de l'innovation
-        numero: 1
+        numero: 4
         categorie: À venir
         salle: Visioconférence
 
       - heure: 17:05 - 17:40
         title: Politiques de l'innovation
-        numero: 2
+        numero: 4
         type: Conférence
         categorie: À venir
         speaker:
           name: Yaël Benayoun, Irénée Régnauld
 
       - heure: 17:40 - 18:40
-        title: Keynote
-        numero: 2
-        type: Conférence
+        type: Keynote
         categorie: Ethique, UX & jeu vidéo
         speaker:
           name: Célia Hodent
@@ -276,7 +258,7 @@ programmes:
 
       - heure: 14:00 - 16:00
         title: Politiques de l'innovation
-        numero: 2
+        numero: 4
         type: Atelier
         categorie: À venir
         salle: Salle d'atelier 2
