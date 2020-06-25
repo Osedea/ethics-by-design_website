@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  pathPrefix: "/ethics-by-design_website",
   siteMetadata: {
     title: "Ethics by Design - 2020",
     social: [
