@@ -223,7 +223,6 @@ programmes:
         title: Conception éco-responsable
         numero: 1
         type: Atelier
-        numero: 1
         categorie: Comment concevoir avec sobriété ?
         speaker:
           name: À venir
