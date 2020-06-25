@@ -19,16 +19,6 @@ programmes:
           role: coming
         salle: Salle d'atelier 1
 
-      - heure: 14:00 - 16:00
-        type: Atelier
-        numero: 1
-        title: Comment faire du design de service de location d'outils high tech ?
-        categorie: Conception éco-responsable.
-        speaker:
-          name: À venir
-          role: coming
-        salle: Salle d'atelier 1
-
       - heure: 16:00 - 16:30
         type: Ouverture
         categorie: Introduction.
@@ -65,24 +55,14 @@ programmes:
           role: Designer et chercheuse
         salle: Amphitheatre
 
-      - heure: 14:00 - 15:40
-        title: Formation et posture
+      - heure: 14:00 - 16:00
+        type: Atelier
         numero: 2
-        type: Conference
-        categorie: Design et morale.
+        title: Comment faire du design de service de location d'outils high tech ?
+        categorie: Conception éco-responsable.
         speaker:
-          name: Elina Tossi
-          role: Designer et chercheuse
-        salle: Amphitheatre
-
-      - heure: 16:00 - 17:30
-        title: Formation et posture
-        numero: 2
-        type: Conference
-        categorie: Design et morale.
-        speaker:
-          name: Elina Tossi
-          role: Designer et chercheuse
-        salle: Amphitheatre
+          name: À venir
+          role: coming
+        salle: Salle d'atelier 1
 
 ---
