@@ -10,22 +10,28 @@ Merci de lire avec attention les différentes modalités d’utilisation du pré
 ## Editeur du Site
 
 Designers Ethiques
-Numéro de SIRET : 828 948 223 00013
-Responsables éditoriaux : Karl Pineau & Mellie La Roque 
-Responsables design et identité graphique :  Mellie La Roque & Marcelo Scharlau Coelho
-16 rue Saint-Ferdinand, 75017, Paris
-Email : hello@designersethiques.org
-Site Web : https://2020.ethicsbydesign.fr
+
+- Numéro de SIRET : 828 948 223 00013
+- Responsables éditoriaux : Karl Pineau & Mellie La Roque 
+- Responsables design et identité graphique :  Mellie La Roque & Marcelo Scharlau Coelho
+- 16 rue Saint-Ferdinand, 75017, Paris
+- Email : hello@designersethiques.org
+- Site Web : https://designersethiques.org
 
 ## Hébergement
 
 Hébergeur :...
+
 Adresse : ...
+
 Site Web : ...
 
 Développement 
+
 Osedea
+
 Adresse : ...
+
 Site Web : ...
 
 ## Conditions d’utilisation
