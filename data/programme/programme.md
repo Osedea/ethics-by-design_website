@@ -15,7 +15,7 @@ programmes:
         categorie: Conception éco-responsable.
         speaker:
           name: À venir
-          role: -
+          role: coming
         salle: Salle d'atelier 1
 
       - heure: 14:00 - 16:00
@@ -24,7 +24,7 @@ programmes:
         categorie: Conception éco-responsable.
         speaker:
           name: À venir
-          role: -
+          role: coming
         salle: Salle d'atelier 2
 
       - heure: 16:00 - 16:30
