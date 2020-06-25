@@ -259,7 +259,7 @@ programmes:
         title: Conception éco-responsable
         numero: 1
         type: Conference
-        categorie: Design systémique : impacts et externalités.
+        categorie: Design systémique, impacts et externalités.
         speaker:
           name: Sabrina Tarquini
           role: Designer
