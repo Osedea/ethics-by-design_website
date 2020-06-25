@@ -120,12 +120,6 @@ skillsPatrons:
       links:
         - text: website
           target: https://osedea.com
-    - name: / OSEDEA
-      picture_url: /images/osedea.png
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
-      links:
-        - text: linkedin
-          target: https://linkedin.com
 
 moneyPatrons:
      - name: / DINUM
