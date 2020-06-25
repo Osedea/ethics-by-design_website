@@ -55,7 +55,7 @@ programmes:
           role: Designer
         salle: Visioconférence
 
-      - heure: 9:00 - 9:30
+      - heure: 14:00 - 16:00
         salle: Salle d'atelier 1
 
       - heure: 14:00 - 16:00
@@ -82,7 +82,7 @@ programmes:
           role: coming
         salle: Salle d'atelier 1
 
-      - heure: 16:00 - 16:30
+      - heure: 16:00 - 16:15
         type: Ouverture
         categorie: Introduction.
         speaker:
@@ -90,35 +90,22 @@ programmes:
           role: d'organisation
         salle: Visioconférence
 
-      - heure: 16:30 - 17:30
-        type: Keynote
-        categorie: Design et morale.
-        speaker:
-          name: Elina Tossi
-          role: Designer et chercheuse
-        salle: Visioconférence
-
-      - heure: 17:45 - 18:20
+      - heure: 16:15 - 17:45
+        type: Table-ronde
         title: Conception éco-responsable
         numero: 1
-        type: Conference
-        categorie: Le choix des formes peut-il être un levier pour l'engagement écologique ?
+        categorie: Quels enjeux politiques pour l’éco-conception de service numérique ?
         speaker:
-          name: Yaprak Hamarat
-          role: Designer et chercheuse
+          name: Jacques-François Marchandise (Fing), Adèle Chasson (HOP), Céline Lescop (Shift Project)
         salle: Visioconférence
 
-      - heure: 18:20 - 18:55
-        title: Conception éco-responsable
-        numero: 1
-        type: Conference
-        categorie: Design systémique, impacts et externalités.
-        speaker:
-          name: Sabrina Tarquini
-          role: Designer
-        salle: Visioconférence
+      - heure: 18:00 - 19:00
+        title: Formation et posture du designer
+        numero: 2
+        type: Fish bowl
+        categorie: À venir
 
-      - heure: 9:00 - 9:30
+      - heure: 14:00 - 16:00
         salle: Salle d'atelier 1
 
       - heure: 14:00 - 16:00
