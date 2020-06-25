@@ -11,6 +11,7 @@ programmes:
     horaire:
       - heure: 14:00 - 16:00
         type: Atelier
+        numero: 1
         title: Comment concevoir avec sobriété ?
         categorie: Conception éco-responsable.
         speaker:
@@ -20,6 +21,7 @@ programmes:
 
       - heure: 14:00 - 16:00
         type: Atelier
+        numero: 1
         title: Comment faire du design de service de location d'outils high tech ?
         categorie: Conception éco-responsable.
         speaker:
