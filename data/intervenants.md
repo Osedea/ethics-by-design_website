@@ -91,7 +91,7 @@ speakers:
           text: twitter
         - target: https://www.linkedin.com/in/pygosset/
           text: linkedin
-    - name: !!! BAM
+    - name: BAM!!! 
       role: 
       description: Consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris.
       picture_url: /images/elinatossi.jpg
@@ -100,7 +100,7 @@ speakers:
           text: twitter
         - target: https://www.linkedin.com/in/jmarchandise/
           text: linkedin
-    - name: !!! FAIRNESS
+    - name: FAIRNESS!!!
       role: Délégué général de la Fing
       description: Consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris.
       picture_url: /images/elinatossi.jpg
@@ -109,7 +109,7 @@ speakers:
           text: twitter
         - target: https://www.linkedin.com/in/jmarchandise/
           text: linkedin
-    - name: !!! OUISHARE
+    - name: OUISHARE!!!
       role: Délégué général de la Fing
       description: Consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris.
       picture_url: /images/elinatossi.jpg
