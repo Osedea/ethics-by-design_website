@@ -10,23 +10,17 @@ mainsponsor: Direction Interministérielle du NUMérique
 
 sponsors:
     -
-        name: /Osedea
-        link: https://www.osedea.com
+        name: DINUM
+        link: https://www.numerique.gouv.fr/
     -
         name: /Osedea
         link: https://www.osedea.com
     -
-        name: /Osedea
-        link: https://www.osedea.com
+        name: Adeo
+        link: https://www.adeo.com/
     -
-        name: /Osedea
-        link: https://www.osedea.com
-    -
-        name: /Osedea
-        link: https://www.osedea.com
-    -
-        name: /Osedea
-        link: https://www.osedea.com
+        name: BackStory
+        link: https://www.backstory.fr/
 
 soutien: avec le soutien de la cnil et la fing
 
