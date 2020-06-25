@@ -274,6 +274,6 @@ programmes:
         speaker:
           name: À venir
           role: coming
-        salle: Salle d'atelier 1
+        salle: Salle d'atelier 2
 
 ---
