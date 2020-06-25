@@ -117,6 +117,7 @@ volunteers:
 skillsPatrons:
     - name: / OSEDEA
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
+      picture_url: /images/osedea.png
       links:
         - text: website
           target: https://osedea.com
