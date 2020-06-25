@@ -58,7 +58,7 @@ programmes:
       - heure: 14:00 - 16:00
         type: Atelier
         numero: 2
-        title: Comment faire du design de service de location d'outils high tech ?
+        categorie: Comment faire du design de service de location d'outils high tech ?
         speaker:
           name: À venir
           role: coming
