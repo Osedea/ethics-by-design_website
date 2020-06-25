@@ -122,6 +122,8 @@ programmes:
         salle: Salle d'atelier 1
 
       - heure: 14:00 - 16:00
+        title: Formation et posture du designer
+        numero: 2
         type: Atelier
         categorie: Comment monter une école de design avec des valeurs éthiques ?
         speaker:
