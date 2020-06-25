@@ -82,6 +82,9 @@ speakers:
       role: Philosophe & designer
       description: Consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris.
       picture_url: /images/elinatossi.jpg
+      links:
+        - target: https://twitter.com/
+          text: twitter
     - name: Pierre-Yves Gosset
       role: Directeur de l'association http://framasoft.org
       description: Consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris.
