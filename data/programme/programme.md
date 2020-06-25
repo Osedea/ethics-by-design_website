@@ -220,10 +220,11 @@ programmes:
     fermetureTitle: Conclusion
     horaire:
       - heure: 14:00 - 16:00
+        title: Conception éco-responsable
+        numero: 1
         type: Atelier
         numero: 1
-        title: Comment concevoir avec sobriété ?
-        categorie: Conception éco-responsable.
+        categorie: Comment concevoir avec sobriété ?
         speaker:
           name: À venir
           role: coming
@@ -265,13 +266,15 @@ programmes:
           role: Designer et chercheuse
         salle: Amphitheatre
 
+      - heure: 9:00 - 9:30
+        salle: Salle d'atelier 1
+
       - heure: 14:00 - 16:00
         type: Atelier
-        numero: 2
         categorie: Comment faire du design de service de location d'outils high tech ?
         speaker:
           name: À venir
           role: coming
-        salle: Salle d'atelier 2
+        salle: Salle d'atelier 1
 
 ---
