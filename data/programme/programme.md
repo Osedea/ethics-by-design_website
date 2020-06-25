@@ -233,9 +233,9 @@ programmes:
         type: Ouverture
         categorie: Introduction.
         speaker:
-          name: Marie-Cécile Gowdin-Paccard, Dominique Karadjian, Mellie La Roque, Karl Pineau, Raphaël Yharrassarry
-          role: Equipe d'organisation
-        salle: Salle de visioconférence
+          name: Équipe
+          role: d'organisation
+        salle: Visioconférence
 
       - heure: 16:30 - 17:30
         type: Keynote
@@ -243,27 +243,27 @@ programmes:
         speaker:
           name: Elina Tossi
           role: Designer et chercheuse
-        salle: Salle de visioconférence
+        salle: Visioconférence
 
-      - heure: 9:30 - 10:40
-        title: Impact Environnemental
+      - heure: 17:45 - 18:20
+        title: Conception éco-responsable
         numero: 1
         type: Conference
-        categorie: Design et morale.
+        categorie: Le choix des formes peut-il être un levier pour l'engagement écologique ?
         speaker:
-          name: Elina Tossi
+          name: Yaprak Hamarat
           role: Designer et chercheuse
-        salle: Amphitheatre
+        salle: Visioconférence
 
-      - heure: 11:00 - 12:30
-        title: Impact Environnemental
+      - heure: 18:20 - 18:55
+        title: Conception éco-responsable
         numero: 1
         type: Conference
-        categorie: Design et morale.
+        categorie: Design systémique : impacts et externalités.
         speaker:
-          name: Elina Tossi
-          role: Designer et chercheuse
-        salle: Amphitheatre
+          name: Sabrina Tarquini
+          role: Designer
+        salle: Visioconférence
 
       - heure: 9:00 - 9:30
         salle: Salle d'atelier 1
