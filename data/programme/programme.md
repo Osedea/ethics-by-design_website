@@ -4,7 +4,7 @@ path: /programme
 type: programmes
 programmes:
   - jourTitle: Lundi 28 septembre
-    ouvertureHeure: 16:00 - 16:30
+    ouvertureHeure: 14:00
     ouvertureTitle: Introduction
     fermetureHeure: 19:00
     fermetureTitle: Conclusion
