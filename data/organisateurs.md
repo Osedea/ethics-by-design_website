@@ -128,12 +128,24 @@ skillsPatrons:
           target: https://linkedin.com
 
 moneyPatrons:
-     - name: / OSEDEA
+     - name: / DINUM
        picture_url: /images/osedea.png
-       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem consequat tincidunt posuere. Curabitur vel blandit mauris. Pellentesque volutpat.
+       description: TODO
        links:
-         - text: linkedin
-           target: https://linkedin.com
+         - text: website
+           target: https://www.numerique.gouv.fr/
+     - name: / Adeo
+       picture_url: /images/osedea.png
+       description: TODO
+       links:
+         - text: website
+           target: https://www.adeo.com/
+     - name: / BackStory
+       picture_url: /images/osedea.png
+       description: BACKSTORY est une agence de conseil indépendante fondée en 2010 par des spécialistes de l’expérience utilisateur et du conseil stratégique, engagés et soucieux d’appliquer une démarche éthique et responsable, dans un esprit entreprenarial.
+       links:
+         - text: website
+           target: http://www.backstory.fr/fr/
 
 ---
 
