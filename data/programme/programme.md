@@ -27,7 +27,7 @@ programmes:
         speaker:
           name: À venir
           role: coming
-        salle: Salle d'atelier 2
+        salle: Salle d'atelier 1
 
       - heure: 16:00 - 16:30
         type: Ouverture
