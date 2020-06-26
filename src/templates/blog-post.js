@@ -17,7 +17,7 @@ const BlogPost = ({ location, pageContext }) => {
                 <Title style={{ borderBottom: 'solid 3px black', paddingBottom: '15px', marginTop: '0' }}>{pageContext.frontmatter.title}</Title>
                 <div dangerouslySetInnerHTML={{ __html: pageContext.html }} />
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold', fontFamily: 'Helvetica' }}>Ecrit par {pageContext.frontmatter.author}</p>
-                {articles.length > 0
+                {articles.filter(({ title }) => title !== 'empty').length > 0
                     ? <>
                         <Title>À lire aussi</Title>
                         <ArticlesList items={articles} />
