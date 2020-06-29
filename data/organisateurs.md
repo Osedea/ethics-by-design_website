@@ -111,7 +111,7 @@ contributors:
           target: https://twitter.com/JulienDeSanctis
           
 volunteers:
-    - name: Volontaire 1
+    - name: Marcelo Coelho
 
 skillsPatrons:
     - name: / OSEDEA
