@@ -40,4 +40,4 @@ Tout comme lors des éditions 2017 et 2018 de l’évènement, nous vous proposo
 
 Ce afin de permettre à ceux qui constituent le public traditionnellement hétérogène d’Ethics by design de pouvoir dialoguer entre eux : designers, studios, agences, universitaires, journalistes, chefs de projet et consultants. 
 
-##Alors, vous en êtes ?
+**Alors, vous en êtes ?**
