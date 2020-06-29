@@ -6,7 +6,6 @@ path: /organisateurs
 organizers:
     - name: Marie-Cécile Godwin-Paccard
       role: Systemic designer & UX researcher
-      description: TODO
       picture_url: /images/mcgp.png
       links:
         - text: linkedin
