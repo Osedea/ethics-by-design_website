@@ -12,6 +12,7 @@ import Mention from "../components/mention"
 import Grid from "../components/grid"
 import PrefixedImage from "../components/prefixed-image"
 import Pills from "../components/pills"
+import Row from "../components/row"
 
 export const query = graphql`
   query {
@@ -69,10 +70,18 @@ const Index = ({ data, location}) => {
     return (
         <Layout location={location}>
         <Section>
-            <Pills>
-                <div>{edition.frontmatter.month}</div>
-                <div>{edition.frontmatter.days}</div>
-            </Pills>
+            <Row>
+                <Pills>
+                    <div>{edition.frontmatter.month}</div>
+                    <div>{edition.frontmatter.days}</div>
+                </Pills>
+                <Pills>
+                    <div style={{ padding: '5px 10px' }}>
+                        <img src="/assets/tree.svg" alt="Arbre" />
+                    </div>
+                    <div><span>Ce site émet XXg de CO2</span></div>
+                </Pills>
+            </Row>
             <Hero
                 title={(
                     <>
