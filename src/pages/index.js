@@ -33,7 +33,6 @@ export const query = graphql`
                     month
                     days
                     lieu
-                    lieuLabel
                     media
                     linkText
                     linkPath
@@ -79,7 +78,6 @@ const Index = ({ data, location}) => {
                     <>
                         <Logo />
                         <p>{edition.frontmatter.lieu}</p>
-                        <p>{edition.frontmatter.lieuLabel}</p>
                     </>
                 )}
                 media={edition.frontmatter.media}
